@@ -30091,15 +30091,15 @@ var __webpack_exports__ = {};
 (() => {
 const core = __nccwpck_require__(1114);
 const github = __nccwpck_require__(2761);
-
 try {
-  const payload = JSON.parse(JSON.stringify(github.context.payload, undefined,2));
-
-  const result = `This is the result for ${payload.inputs.eventName} event.`
-  core.setOutput("result", result);
-} catch (error) {
-  core.setFailed(error.message);
+    const payload = JSON.parse(JSON.stringify(github.context.payload, undefined, 2));
+    const result = `This is the result for ${payload.inputs.eventName} event.`;
+    core.setOutput("result", result);
 }
+catch (error) {
+    core.setFailed(error.message);
+}
+
 })();
 
 module.exports = __webpack_exports__;
