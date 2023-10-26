@@ -11,8 +11,6 @@ runs:
       shell: bash
     - run: yarn --cwd ${{ github.action_path }} --production=true
       shell: bash
-    - run: yarn --cwd ${{ github.action_path }} build
-      shell: bash
     - run: yarn --cwd ${{ github.action_path }} start
       shell: bash
       id: mainHandler
