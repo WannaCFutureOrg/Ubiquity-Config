@@ -6,7 +6,7 @@ try {
     JSON.stringify(github.context.payload, undefined, 2)
   );
 
-  const result = `This is the result for ${payload.inputs.eventName} event.`;
+  const result = `This is the result for received ${payload.inputs.eventName} event.`;
   core.setOutput("result", result);
 } catch (error) {
   core.setFailed(error.message);
