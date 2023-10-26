@@ -21,7 +21,7 @@ jobs:
         id: Ubiquity_action
       - name: Print output
         run:
-          echo `${{steps.Ubiquity_action.outputs.result}}`
+          echo ${{steps.Ubiquity_action.outputs.result}}
       - name: Trigger repository_dispatch to the repo
         run: |
           curl -L \
