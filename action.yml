@@ -1,8 +1,5 @@
 name: "Hello World"
 description: "Greet someone and record the time"
-outputs:
-  result: # id of output
-    description: "The result of a event handler"
 runs:
   using: "composite"
   steps:
@@ -13,4 +10,7 @@ runs:
     - run: yarn --cwd ${{ github.action_path }} build
       shell: bash
     - run: yarn --cwd ${{ github.action_path }} start
+      id: mainHandler
       shell: bash
+    outputs:
+     result: ${{ steps.mainHandler.outputs.result }}
