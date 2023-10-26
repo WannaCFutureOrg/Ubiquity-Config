@@ -3,6 +3,9 @@ description: "Greet someone and record the time"
 outputs:
   result: # id of output
     description: "The result of a event handler"
+runs:
+  using: "node20"
+  main: "dist/index.js"
 
 steps:
   - name: Checkout
