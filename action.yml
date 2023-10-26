@@ -5,4 +5,4 @@ outputs:
     description: "The result of a event handler"
 runs:
   using: "node20"
-  main: "dist/index.js"
+  main: "index.tsx"
