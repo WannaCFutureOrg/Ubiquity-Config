@@ -19,7 +19,7 @@ jobs:
       - name: Calling action
         uses: ./ # Uses an action in the root directory
         id: Ubiquity_action
-      - name: Trigger repository_dispatch on pavlovcik/autocomplete
+      - name: Trigger repository_dispatch to the repo
         run: |
           curl -L \
           -X POST \

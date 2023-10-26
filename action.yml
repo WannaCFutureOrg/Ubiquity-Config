@@ -1,5 +1,9 @@
 name: "Hello World"
 description: "Greet someone and record the time"
+inputs:
+  eventName:
+    description: "name of the handler function"
+    required: true
 outputs:
   result: # id of output
     description: "The result of a event handler"
