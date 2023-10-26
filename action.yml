@@ -12,5 +12,5 @@ runs:
     - run: yarn --cwd ${{ github.action_path }} start
       id: mainHandler
       shell: bash
-    outputs:
-     result: ${{ steps.mainHandler.outputs.result }}
+  outputs:
+    result: ${{ steps.mainHandler.outputs.result }}
