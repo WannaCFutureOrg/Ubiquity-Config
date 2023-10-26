@@ -3,7 +3,7 @@ description: "Greet someone and record the time"
 outputs:
   result: # id of output
     description: "The result of a event handler"
-    result: ${{ steps.mainHandler.outputs.result}}
+    value: ${{ steps.mainHandler.outputs.result}}
 runs:
   using: "composite"
   steps:
